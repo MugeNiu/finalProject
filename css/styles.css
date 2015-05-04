@@ -263,8 +263,8 @@ h1{
 	color: #ec3b45;
 	border-style:  solid;
 	position: absolute;
-/* 	 -webkit-transition: width 0.5s;
-*/}
+ 	 -webkit-transition: width 0.5s;
+}
 
 .circle{
 	background-color: #ec3b45;
