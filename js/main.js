@@ -9,21 +9,27 @@ var stepInfo_china = {
     },
     step02: {
         name: 'Getting Electricity',
-        stepNumber_arr: ["","","",""],
-        details_arr: ["","","",""],
-        story_arr:["quote1","quote2","quote3","quote4"]
+        stepNumber_arr: ["first small step in step 2","second small step in step 2","third small step in step 2","fourth small step in step 2"],
+        details_arr: ["e","f","g","h"],
+        story_arr:["quote1","quote2","quote3","quote4"],
+        day:[1,3,6,9],
+        cost:[12,15,18,130]
     },
     step03: {
         name: 'Registering Property',
         stepNumber_arr: ["","","",""],
         details_arr: ["","","",""],
-        story_arr:["quote1","quote2","quote3","quote4"]
+        story_arr:["quote1","quote2","quote3","quote4"],
+        day:[1,3,6,9],
+        cost:[12,15,18,130]
 	},
     step04: {
         name: 'Paying Taxes',
         stepNumber_arr: ["","","",""],
         details_arr: ["","","",""],
-        story_arr:["quote1","quote2","quote3","quote4"]
+        story_arr:["quote1","quote2","quote3","quote4"],
+        day:[1,3,6,9],
+        cost:[12,15,18,130]
     }
 };
 
@@ -38,21 +44,27 @@ var stepInfo_us = {
     },
     step02: {
         name: 'Getting Electricity',
-        stepNumber_arr: ["","","",""],
-        details_arr: ["","","",""],
-        story_arr:["quote1","quote2","quote3","quote4"]
+		stepNumber_arr: ["first small step in step 3","second small step in step 3","third small step in step 3","fourth small step in step 3"],     
+		details_arr: ["i","j","k","l"],
+        story_arr:["quote1","quote2","quote3","quote4"],
+        day:[1,3,6,9],
+        cost:[12,15,18,130]
     },
     step03: {
         name: 'Registering Property',
         stepNumber_arr: ["","","",""],
         details_arr: ["","","",""],
- 		story_arr:["quote1","quote2","quote3","quote4"]
+ 		story_arr:["quote1","quote2","quote3","quote4"],
+ 		day:[1,3,6,9],
+        cost:[12,15,18,130]
     },
     step04: {
         name: 'Paying Taxes',
         stepNumber_arr: ["","","",""],
         details_arr: ["","","",""],
-		story_arr:["quote1","quote2","quote3","quote4"]
+		story_arr:["quote1","quote2","quote3","quote4"],
+		day:[1,3,6,9],
+        cost:[12,15,18,130]
     }
 };
 
@@ -66,6 +78,8 @@ var stepInfo_us = {
 // 		setTimeout($(elem_detail).html(details_arr[i]), 3000);
 // 	}
 // };
+
+
 
 $('.procedure').on('click', function(){
 	

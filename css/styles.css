@@ -121,6 +121,14 @@ h1{
 	margin-top:-46px;
 }
 
+#dollar{
+	display:inline-block;
+	position: absolute;
+	font-size: 30px;
+	margin-left: 104px;
+	margin-top:-46px;
+}
+
 .country{
 	font-size: 40px;
 	font-style: bold;
