@@ -1,26 +1,31 @@
  (function(){
+ 	var chinaMap1 = "<div class='map'><div class='line'></div><div class='redline' id='redlineChina'></div><div class='circle'id='step1'></div><div class='circle'id='step2'></div><div class='circle'id='step3'></div><div class='circle'id='step4'></div><div class='circle'id='step5'></div><div class='circle'id='step6'></div><div class='endStar' id='endStarChina'>	<svg id='endStarsvgChina' xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox=48'><path id='path1' fill='none' stroke='#000' d='m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z'/></svg></div><div class='labelSpecific'>Registering business</div></div>";
+ 	var chinaMap2 = "<div class='map'><div class='line'></div><div class='redline' id='redlineChina'></div><div class='circle'id='step1'></div><div class='circle'id='step2'></div><div class='circle'id='step3'></div><div class='circle'id='step4'></div><div class='circle'id='step5'></div><div class='endStar' id='endStarChina'>	<svg id='endStarsvgChina' xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox=48'><path id='path1' fill='none' stroke='#000' d='m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z'/></svg></div><div class='labelSpecific'>Registering business</div></div>";
+ 	var chinaMap3 = "<div class='map'><div class='line'></div><div class='redline' id='redlineChina'></div><div class='circle'id='step1'></div><div class='circle'id='step2'></div><div class='circle'id='step3'></div><div class='circle'id='step4'></div><div class='circle'id='step5'></div><div class='endStar' id='endStarChina'>	<svg id='endStarsvgChina' xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox=48'><path id='path1' fill='none' stroke='#000' d='m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z'/></svg></div><div class='labelSpecific'>Registering business</div></div>";
+ 	var chinaMap4 = "<div class='map'><div class='line'></div><div class='redline' id='redlineChina'></div><div class='circle'id='step1'></div><div class='circle'id='step2'></div><div class='circle'id='step3'></div><div class='circle'id='step4'></div><div class='endStar' id='endStarChina'>	<svg id='endStarsvgChina' xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox=48'><path id='path1' fill='none' stroke='#000' d='m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z'/></svg></div><div class='labelSpecific'>Registering business</div></div>";
+
 
 var stepInfo_china = {
     step01: {
         name: 'register_business',
-		stepNumber_arr: ["1.Get a name and an agreement to operate","2.Apply for business license and register for tax","3. Make a company seal","4. Apply for the authorization to print financial invoice and Purchase uniform invoices"],        
-		details_arr: ["The applicant picks up the application for company name pre-approval from the local Administration of Industry and Commerce (AIC), or otherwise, downloads the form from AIC’s Web site. It will be approved or rejected on the spot.","In this stage, the applicant shall apply for registration certification 'business license of enterprise legal person' with SAIC,the organization code certificate issued by the Quality and Technology Supervision Bureau and registration for both state and local tax with the tax bureau.","The applicant needs to firstly obtain the approval to make a company seal from the police department, and then designate a company possessing a Shanghai Special Industry Permit (company seal carving) to make a company seal.","After registering for state or local taxes and obtaining the tax registration certificate, the company must apply separately to the relevant authorities for approval to purchase and issue financial invoices/receipts,andobtain and submit an application form to purchase uniform invoices."],
-        story_arr:["It’s extremely frustrating. I applied nine times on my local AIC’s website in Suzhou and everything it said ‘name already exists’. I called to ask if I could go there in person to check, they said no.You have to wait two days between applications so it took me six whole days to get a name! My brain juice is completely dry after coming up with nine names! The new online application system is not at all convenient.","quote2","quote3","quote4"],        
-        day:[1,12,16,27],
-        cost:[0,0,300,402]
+		stepNumber_arr: ["1.Get a name and an agreement to operate","2.Apply for business license and register for tax","3. Make a company seal","4. Apply for the authorization to print financial invoice and Purchase uniform invoices","5.File for employpee recruitment and register for social insurance payment"],        
+		details_arr: ["The applicant picks up the application for company name pre-approval from the local Administration of Industry and Commerce (AIC), or otherwise, downloads the form from AIC’s Web site. It will be approved or rejected on the spot.","In this stage, the applicant shall apply for registration certification 'business license of enterprise legal person' with SAIC,the organization code certificate issued by the Quality and Technology Supervision Bureau and registration for both state and local tax with the tax bureau.","The applicant needs to firstly obtain the approval to make a company seal from the police department, and then designate a company possessing a Shanghai Special Industry Permit (company seal carving) to make a company seal.","After registering for state or local taxes and obtaining the tax registration certificate, the company must apply separately to the relevant authorities for approval to purchase and issue financial invoices/receipts,andobtain and submit an application form to purchase uniform invoices.","Within 30 days of recruiting employees, a new company must register with the local career service center, sponsored by the local government, and meanwhile, register for the payment of employee social insurance with the local social insurance office by submitting a completed social insurance registration form and other documents."],
+        story_arr:["It’s extremely frustrating. I applied nine times on my local AIC’s website in Suzhou and everything it said ‘name already exists’. I called to ask if I could go there in person to check, they said no.You have to wait two days between applications so it took me six whole days to get a name! My brain juice is completely dry after coming up with nine names! The new online application system is not at all convenient.","quote2","quote3","quote4","quote5"],        
+        day:[1,12,16,27,29],
+        cost:[0,0,300,402,402]
     },
     step02: {
         name: 'Deal with construction permits',
-		stepNumber_arr:["1.Request and obtain an environmental evaluation","2.Hire an authorized supervision agency","3. Request and obtain building permit","4. Receive all forms of inspection and obtain certification"],
-	   	details_arr: ["In the case considered here, BuildCo must submit an environmental impact assessment. The following documents are required for application:application form for environmental impact assessment; business license;filing opinion and statement of situation,topographical map,Ichonographical map and etc.","BuildCo must hire a supervision agency to supervise and ensure the quality and safety of the construction.There is no uniform price for hiring a supervisor. The cost should be calculated as designing step, building and repairing step.","To request a building permit, BuildCo must file the following documents: application form for building construction permit;IC Card of Shanghai Construction Project;Land use permit for construction purpose or title certificates of land or property;Planning permit for the construction project and etc. The BuildCo must request inspections from fire department,'Four-Party',the Shanghai Bureau of Planning Land and Resources, and reuqest opinion on whether construction project is lightning-proof"],
+		stepNumber_arr:["1.Request and obtain an environmental evaluation","2.Hire an authorized supervision agency","3. Request and obtain building permit","4. Receive all forms of inspection and obtain certification","5.Receive Environmental Protection inspection of the completed construction","6.Receive water and sewage inspection, and get water connection"],
+	   	details_arr: ["In the case considered here, BuildCo must submit an environmental impact assessment. The following documents are required for application:application form for environmental impact assessment; business license;filing opinion and statement of situation,topographical map,Ichonographical map and etc.","BuildCo must hire a supervision agency to supervise and ensure the quality and safety of the construction.There is no uniform price for hiring a supervisor. The cost should be calculated as designing step, building and repairing step.","To request a building permit, BuildCo must file the following documents: application form for building construction permit;IC Card of Shanghai Construction Project;Land use permit for construction purpose or title certificates of land or property;Planning permit for the construction project and etc. The BuildCo must request inspections from fire department,'Four-Party',the Shanghai Bureau of Planning Land and Resources, and reuqest opinion on whether construction project is lightning-proof","The agency in charge of the inspection is the Environmental Protection Department","BuildCo must first apply for a water connection inquiry from the Municipal Water Bureau. Afterwards, BuildCo may apply for the water connection.Upon receiving the water supply application the water service crew conducts on-site surveys. After completing the inspection and trial operation, the bureau will examine the results of the facility and grant approval."],
 	   story_arr:["","","","","",""],
-	   day:[30,87,140,195],
-	   cost:[0,156021,156021,157272]
+	   day:[30,87,140,195,225,274],
+	   cost:[0,156021,156021,157272,157272,157272]
     },
     step03: {
     	name: 'Get Electricity',
-		stepNumber_arr: ["1.Apply with state-owned electric power company wait for power supply plan and external site inspection","2.Submit estimate payment and get project design plans","3.Purchase material and conduct installation","4.Submit report and wait for final external inspection"],
-        details_arr: ["Documents to be submitted along with application - One copy of each business license, tax registration certificate and organizational code registration certificate, Clearance certificate from Planning Authority.","Costs include - cable-laying work: 3-phase and 5-level Y, voltage 220/380V, 140 kVA, normally need 4×70+1×35 bus, YJV200 Model armored installation."],
+		stepNumber_arr: ["1.Apply with state-owned electric power company wait for power supply plan and external site inspection","2.Submit estimate payment and get project design plans","3.Purchase material and conduct installation","4.Submit report and wait for final external inspection","5. Receive installation of meter and connection to grid"],
+        details_arr: ["Documents to be submitted along with application - One copy of each business license, tax registration certificate and organizational code registration certificate, Clearance certificate from Planning Authority.","Costs include - cable-laying work: 3-phase and 5-level Y, voltage 220/380V, 140 kVA, normally need 4×70+1×35 bus, YJV200 Model armored installation.","Materials to be purchased by customer include Transformer, high-voltage switch cabinet, low-voltage switch cabinet, wires, cable and other accessories.	Shanghai Municipal Electric Power Company staff provides internal wiring inspection and inspection of external installation.","Shanghai Municipal Electric Power Company provides meter installation and connection to grid.",],
         story_arr:["","","","",""],
         day:[60,74,124,138,141],
         cost:[0,3600,192700,1927000,1927000]
@@ -90,6 +95,7 @@ $('#star1').on('click', function(){
 	$('#path2_').attr('fill',"none");
 	$('#path3_').attr('fill',"none");
 	$('#path4_').attr('fill',"none");
+	$('#chinaMap').html(chinaMap1);
 });
 $('#star2').on('click', function(){
 
@@ -97,6 +103,7 @@ $('#star2').on('click', function(){
 	$('#path1_').attr('fill',"none");
 	$('#path3_').attr('fill',"none");
 	$('#path4_').attr('fill',"none");
+	$('#chinaMap').html(chinaMap2);
 
 
 });
@@ -106,6 +113,7 @@ $('#star3').on('click', function(){
 	$('#path2_').attr('fill',"none");
 	$('#path1_').attr('fill',"none");
 	$('#path4_').attr('fill',"none");
+	$('#chinaMap').html(chinaMap3);
 
 });
 
@@ -115,6 +123,7 @@ $('#star4').on('click', function(){
 	$('#path2_').attr('fill',"none");
 	$('#path3_').attr('fill',"none");
 	$('#path1_').attr('fill',"none");
+	$('#chinaMap').html(chinaMap4);
 
 });
 
@@ -131,32 +140,21 @@ $('.procedure').on('click', function(){
 	// $('#path3_').attr('fill',"#ec3b45");
 	// $('#path4_').attr('fill',"#ec3b45");
 
-var progressBarChina= setInterval(function(){
+var progressBar = setInterval(function(){
 
 	document.getElementById("redlineChina").style.width = "100px";
 	setInterval(function(){
-		document.getElementById("redlineChina").style.width = "230px";
+		document.getElementById("redlineChina").style.width = "200px";
 			setInterval(function(){
-				document.getElementById("redlineChina").style.width = "350px";
+				document.getElementById("redlineChina").style.width = "400px";
 					setInterval(function(){
 						document.getElementById("redlineChina").style.width = "500px";
-			},2000)
-		},2000)
-	},2000)
-});
-
-var progressBarUS = setInterval(function(){
-
-	document.getElementById("redlineUS").style.width = "100px";
-		setInterval(function(){
-			document.getElementById("redlineUS").style.width = "230px";
-				setInterval(function(){
-					document.getElementById("redlineUS").style.width = "350px";
 						setInterval(function(){
-							document.getElementById("redlineUS").style.width = "500px";
-			},2000)
-		},2000)
-	},2000)
+							document.getElementById("redlineChina").style.width = "600px";
+				},1000)
+			},1000)
+		},1000)
+	},1000)
 });
 
 
@@ -232,7 +230,7 @@ var progressBarUS = setInterval(function(){
 		if(i >= len){
 			clearInterval(interval);
 		}
-	},2000)
+	},1000)
 
 	
 })
