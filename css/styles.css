@@ -127,21 +127,6 @@ h1{
 	font-family: "black", sans-serif;
 }
 
-.button{
-	width: 80px;
-	height: 80px;
-	background-color: #ec3b45;
-	position: absolute;
-	text-align: center;
-	padding:5px;	
-	padding-top: 30px;
-	margin-left:46.5%;
-	margin-top: 20px;
-	font-size: 20px;
-	color: white;
-	text-shadow: 3px 0px 9px rgba (72, 72, 77, 1);
-	border-radius: 50%;
-}
 
 .China, .US{
 	display: inline-block;
@@ -186,8 +171,7 @@ h1{
 	height: 45px;
 	font-size: 14px;
 	padding: 5px;
-/*	padding-top: 20px;
-*/	text-align: center;
+	text-align: center;
 	border-radius: 5px;
 	color: white;
 	font-style: bold;
@@ -246,10 +230,10 @@ h1{
 }*/
 
 .procedure{
-	display: inline-block;
-	z-index: 1000;
-	padding-right:20px; 
-	margin-bottom: 60px;
+	display:inline-block;
+	margin-left:180px; 
+	margin-top:30px;
+	position:relative;
 }
 
 
@@ -283,11 +267,12 @@ h1{
 }
 
 .solidLine{
-	width: 575px;
+	width: 1030px;
 	height: 2px;
 	background-color: #686666;
 	position: absolute;
-	margin-top: 26px;
+	margin-left: 180px;
+	margin-top:59px;
 	opacity: 0.3;
 }
 
