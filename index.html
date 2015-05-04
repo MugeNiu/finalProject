@@ -22,41 +22,41 @@
 		<div class="content">
 			<div class="axis">
 				<div class="solidLine"></div>
-				<div class="procedure" data-key="step01" data-which="svg01">
+				<div class="procedure" data-key="step01" >
 					<div class="star" id="star1">
 						<?xml version="1.0" encoding="utf-8"?>
-						<svg class="starchange"id="svg01" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 51 48">
-						<path id="path1" fill="none" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+						<svg  data-which="svg01" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 51 48">
+						<path id="path1_" class="starchange" fill="none" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
 						</svg>
 					</div>
-					<div class="label">Registering business</div>
+					<div class="label">Register business</div>
 				</div>
 				<div class="procedure" data-key="step02">
 					<div class="star" id="star2">
 						<?xml version="1.0" encoding="utf-8"?>
-						<svg class="starchange" id="svg02" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 51 48">
-						<path id="path1" fill="none" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+						<svg  id="svg02" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 51 48">
+						<path id="path2_" class="starchange" fill="none" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
 						</svg>
 					</div>
-					<div class="label">Getting electricity</div>
+					<div class="label">Get Construction Permits</div>
 				</div>
 				<div class="procedure" data-key="step03">
 					<div class="star" id="star3">
 						<?xml version="1.0" encoding="utf-8"?>
-						<svg class="starchange" id="svg03" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 51 48">
-						<path id="path1" fill="none" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+						<svg  id="svg03" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 51 48">
+						<path id="path3_" class="starchange" fill="none" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
 						</svg>
 					</div>						
-					<div class="label">Registering property</div>
+					<div class="label">Get Electricity</div>
 				</div>
 				<div class="procedure"  data-key="step04">
 					<div class="star" id="star4">
 						<?xml version="1.0" encoding="utf-8"?>
-						<svg class="starchange"id="svg04" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 51 48">
-						<path id="path1" fill="none" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
+						<svg id="svg04" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 51 48">
+						<path id="path4_" class="starchange" fill="none" stroke="#000" d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"/>
 						</svg>
 					</div>
-					<div class="label">Paying </br> taxes</div>
+					<div class="label">Register Property</div>
 				</div>
 			</div>
 
@@ -72,6 +72,7 @@
 				</div>
 				<div class="map" id="mapChina">
 					<div class="line"></div>
+					<div class="redline" id="redlineChina"></div>
 					<div class="circle" id="step1"></div>
 					<div class="circle" id="step2"></div>
 					<div class="circle" id="step3"></div>
@@ -84,11 +85,12 @@
 					<div class="labelSpecific">Registering business</div>
 				</div>
 				<div class="textbox">
-					<div class="stepName", id="stepName China"> 1. Open a bank account and get capital verification report</div>
-					<div class="details", id="details China"> Apply for registration certification "business license of enterprise legal person" with SAIC, the organization code certificate issued by the Quality and Technology Supervision Bureau and registration for both state and local tax with the tax bureau (11 days, Fee exempted for micro and small size companies from 2012 to 2014 - otherwise 0.08% of registered capital)</div>
+					<div class="stepName", id="stepName China"> 11.Get a name and an agreement to operate</div>
+					<div class="details", id="details China"> The applicant picks up the application for company name pre-approval from the local Administration of Industry and Commerce (AIC), or otherwise, downloads the form from AIC’s Web site. It will be approved or rejected on the spot.
+					</div>
 					<div class="story">
 							<img class="icon" src="imgs/quote1.png"/>
-							<div id="story China"> It's extremely frustrating. I applied for 9 times.It's extremely frustrating. I applied for 9 times.
+							<div id="story China"> It’s extremely frustrating. I applied nine times on my local AIC’s website in Suzhou and everything it said ‘name already exists’. I called to ask if I could go there in person to check, they said no.You have to wait two days between applications so it took me six whole days to get a name! My brain juice is completely dry after coming up with nine names! The new online application system is not at all convenient.
 							</div>
 							<img class="icon" src="imgs/quote2.png"/>
 					</div>
@@ -104,7 +106,7 @@
 					</div>
 					<div class="cost" id="costUS">
 					 <img src="imgs/dollar.png"/>
-					 <div id="dollar"> 120 </div>	
+					 <div id="dollar"> 0 </div>	
 					</div>
 					<div class="map" id="mapUS">
 						<div class="line"></div>
@@ -120,8 +122,9 @@
 						<div class="labelSpecific">Registering business</div>
 					</div>
 					<div class="textbox">
-						<div class="stepName" id="stepName us"> 1. Get a name and an agreement to operate</div>
-						<div class="details" id="details us"> 11 days, Fee exempted for micro and small size companies from 2012 to 2014 - otherwise 0.08% of registered capital)</div>
+						<div class="stepName" id="stepName us"> 1.Request and obtain an environmental evaluation
+						</div>
+						<div class="details" id="details us"> In the case considered here, BuildCo must submit an environmental impact assessment. The following documents are required for application:application form for environmental impact assessment; business license;filing opinion and statement of situation,topographical map,Ichonographical map and etc.</div>
 						<div class="story">
 								<img class="icon" src="imgs/notes.png"/>
 								 <div id="story us"> It's extremely frustrating. I applied for 9 times.It's extremely frustrating. I applied for 9 times. </div>
